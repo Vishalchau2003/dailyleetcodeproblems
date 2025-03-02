@@ -16,17 +16,12 @@ nums1[i].length == nums2[j].length == 2
 1 <= id_i, val_i <= 1000
 Both arrays contain unique ids and are sorted in ascending order.
 Example
+
 Example 1:
 Input:
-cpp
-Copy
-Edit
 nums1 = [[1,2],[2,3],[4,5]];
 nums2 = [[1,4],[3,2],[4,1]];
 Output:
-cpp
-Copy
-Edit
 [[1,6],[2,3],[3,2],[4,6]]
 Explanation:
 id = 1 → 2 + 4 = 6
@@ -35,9 +30,6 @@ id = 3 → 2 (only in nums2)
 id = 4 → 5 + 1 = 6
 Example 2:
 Input:
-cpp
-Copy
-Edit
 nums1 = [[2,4],[3,6],[5,5]];
 nums2 = [[1,3],[4,3]];
 Output:
