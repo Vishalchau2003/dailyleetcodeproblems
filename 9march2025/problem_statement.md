@@ -10,7 +10,6 @@ An **alternating group** is defined as any `k` contiguous tiles in the circle wh
 - The colors **strictly alternate** (each tile in the group except the first and last one has a different color from its left and right tiles).
 
 Since `colors` represents a **circular** arrangement, the first and last tiles are considered adjacent.
-
 ### 🔹 Example Cases  
 #### **Example 1**  
 **Input:**  
