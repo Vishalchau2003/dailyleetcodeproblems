@@ -5,7 +5,7 @@
 - Store, for each position `i`, the **next consonant** index (`nextCons[i]`).
 - This helps in counting valid substrings efficiently.
 
-### **2️⃣ Expand the Sliding Window (`j` moves right)**
+### **2️⃣Expand the Sliding Window (`j` moves right)**
 - Maintain a **vowel frequency map** to track all vowels in the current window.
 - Keep a **counter for consonants** to ensure exactly `k` consonants.
 
