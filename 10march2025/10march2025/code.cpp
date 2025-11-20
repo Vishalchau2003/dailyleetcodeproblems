@@ -1,6 +1,5 @@
 
 ## 🔹 Approach
-
 ### **1️⃣ Precompute Next Consonant Indices**
 - Store, for each position `i`, the **next consonant** index (`nextCons[i]`).
 - This helps in counting valid substrings efficiently.
