@@ -1,0 +1,63 @@
+// class Solution {
+// public:
+//     void generate(string& s, int i, vector<string>& ans, int k) {
+
+//         if (i == k) {
+//             ans.push_back(s);
+//             return;
+//         }
+
+//         s.push_back('0');
+//         generate(s, i + 1, ans, k);
+//         s.pop_back();
+
+//         s.push_back('1');
+//         generate(s, i + 1, ans, k);
+//         s.pop_back();
+//     }
+
+//     bool hasAllCodes(string s, int k) {
+//         if (s.size() < k)
+//             return false;
+//         vector<string> ans;
+//         string str = "";
+
+//         generate(str, 0, ans, k);
+
+//         unordered_map<string, int> mpp;
+
+//         for (int i = 0; i <= s.size() - k; i++) {
+//             mpp[s.substr(i, k)]++;
+//         }
+
+//         for (int i = 0; i < ans.size(); i++) {
+//             if (mpp.find(ans[i]) == mpp.end()) {
+//                 return false;
+//             }
+//         }
+
+//         return true;
+//     }
+// };
+
+
+
+
+class Solution {
+public:
+  
+    bool hasAllCodes(string s, int k) {
+        if (s.size() < k)
+            return false;
+        
+        unordered_set<string>st;
+        for(int i=0;i<=s.size()-k;i++){
+            st.insert(s.substr(i,k));
+        }
+
+        return st.size()==1<<k;
+    }
+};
+
+
+//The number of distinct sub-strings should be exactly 2^k.
